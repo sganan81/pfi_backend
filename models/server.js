@@ -19,7 +19,7 @@ class Server {
     this.app.use('/api/v1/empleados', require('../routes/empleados'))
   }
 
-  listen(){
+  listen () {
     this.app.listen(this.port, () => {
       console.log(`Api escuchando en el puerto: ${this.port}`)
     })
