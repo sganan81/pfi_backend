@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { getEmpleados, getEmpleado } = require('../controllers/empleados')
+const {getEmpleados,getEmpleado} = require('../controllers/empleados')
 
 const rutas = Router()
 

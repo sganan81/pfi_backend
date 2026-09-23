@@ -16,7 +16,9 @@ class Server {
 
   rutas () {
     this.app.get('/', (req, res) => res.send('Ape Express demo!'))
-    this.app.use('/api/v1/empleados', require('../routes/empleados'))
+    this.app.use('/api/v1/pacientes', require('../routes/empleados')) // Alumno 1
+    this.app.use('/api/v1/turnos', require('../routes/empleados')) // Alumno 2
+    this.app.use('/api/v1/profesionales', require('../routes/empleados')) // Alumno 3
   }
 
   listen () {
